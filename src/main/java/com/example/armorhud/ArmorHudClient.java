@@ -69,7 +69,7 @@ public class ArmorHudClient implements ClientModInitializer {
                         if (mc.gui.hud.isHidden()) return;
 
                         int limit = mc.options.framerateLimit().get();
-                        String fpsText = fpsDisplay + " : " + (limit == 0 ? "∞" : limit);
+                        String fpsText = fpsDisplay + " : " + (limit >= 260 ? "∞" : limit);
                         int tw = mc.font.width(fpsText);
                         int px = graphics.guiWidth() / 2 + BAR_WIDTH / 2 + cfg.fpsXOffset;
                         int py = 4 + cfg.fpsYOffset;
