@@ -3,5 +3,4 @@ build/
 .idea/
 run/
 *.log
-libs/
 *.iml
