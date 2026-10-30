@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "armorhud",
+  "version": "${version}",
+  "name": "zabyt's hud stuff",
+  "description": "zabyt's HUD tweaks: shows your equipped armor next to the hotbar, fully configurable.",
+  "authors": [
+    "zabyt"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "icon": "assets/armorhud/icon.png",
+  "entrypoints": {
+    "client": [
+      "com.example.armorhud.ArmorHudClient"
+    ],
+    "modmenu": [
+      "com.example.armorhud.ArmorHudModMenu"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*",
+    "zabytlib": "*"
+  },
+  "suggests": {
+    "elytraslot": "*"
+  }
+}
